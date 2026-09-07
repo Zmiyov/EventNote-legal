@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective Date:** April 15, 2026  
-**Last Updated:** April 15, 2026
+**Last Updated:** September 7, 2026
 
 This Privacy Policy describes how EventNote ("we", "our", or "us") collects, uses, and protects your information when you use the EventNote mobile application ("App"). By using the App, you agree to the practices described in this policy.
 
@@ -9,7 +9,7 @@ This Privacy Policy describes how EventNote ("we", "our", or "us") collects, use
 
 ## 1. Who We Are
 
-EventNote is a photography and event management application designed for photographers, videographers, and production professionals. The App helps you manage bookings, clients, schedules, tasks, and team collaboration.
+EventNote is a photography and event management application designed for photographers, videographers, and production professionals. The App helps you manage bookings, clients, schedules, and tasks.
 
 ---
 
@@ -17,7 +17,7 @@ EventNote is a photography and event management application designed for photogr
 
 ### 2.1 Information You Provide
 
-**Without an account (offline use):**
+**Data you enter in the App:**
 - Event details: title, date and time, timezone, location, type of shoot, pricing, prepayment amounts, notes
 - Client information: name, phone number, Telegram handle, Instagram handle, website
 - To-do tasks and deadlines associated with events
@@ -34,7 +34,16 @@ EventNote is a photography and event management application designed for photogr
 
 When you subscribe to EventNote Pro, Apple's App Store and RevenueCat process your transaction. We receive confirmation of your subscription status and entitlements. We do not receive or store your payment card details.
 
-### 2.4 Usage and Diagnostic Data
+### 2.4 Calendar Import (Optional)
+
+If you choose to import events from a calendar, the App reads existing events so you can select which ones to add to EventNote. Only the events you explicitly select are imported, and imported events are stored locally on your device like any event you create yourself. The App only ever reads your calendars — it never creates, edits, or deletes events in them.
+
+- **Apple Calendar** — with your permission, the App reads events from your device calendars (approximately two years back and two years ahead) using Apple's EventKit framework. This happens entirely on your device. No calendar data is sent to us or to any third party.
+- **Google Calendar** — if you choose to sign in with Google, the App requests read-only access to the events in your primary Google Calendar (the `calendar.events.readonly` scope) and fetches them over a secure connection directly between your device and Google. Signing in also shares your basic Google account information (such as your name and email address) with the App, as part of Google's standard sign-in flow. We do not operate a server, so your calendar data and Google account information are never transmitted to us; they stay on your device. Your Google credentials are handled by Google's Sign-In SDK and are never seen or stored by us. You can revoke the App's access at any time at [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
+
+For each imported event, the App reads the title, description, location, start and end times, and timezone.
+
+### 2.5 Usage and Diagnostic Data
 
 To understand how the App is used and to fix problems, we collect anonymous usage and crash data:
 
@@ -55,6 +64,7 @@ This data is anonymous: the App does not create an account-based analytics profi
 |--------|------------|
 | Provide core event and client management features | Necessary to deliver the service |
 | Sync data to your iCloud account (Pro feature, optional) | Your consent via iCloud settings |
+| Import events from Apple Calendar or Google Calendar | Your consent via the calendar permission or Google sign-in |
 | Show sun position and path for your shoot location | Your consent via location permission |
 | Send event reminders and deadline notifications | Your consent via notification permission |
 | Manage your Pro subscription | Necessary to deliver the service |
@@ -74,6 +84,13 @@ The App integrates with the following third-party services. Each service has its
 - **Activated by:** Enabling iCloud sync (Pro feature). Disabled by default.
 - **Data shared:** All CoreData records you create in the App.
 - **Policy:** [apple.com/legal/privacy](https://www.apple.com/legal/privacy/)
+
+### Google Sign-In and Google Calendar API
+- **Purpose:** Optional one-time import of events from your Google Calendar.
+- **Activated by:** Choosing "Connect Google Calendar" during onboarding or in Settings.
+- **Data shared:** Your Google sign-in is handled by Google. The App receives your basic account information and read-only access to the events in your primary calendar. No calendar data or account information is transmitted to us — it is used on your device only.
+- **Revoking access:** [myaccount.google.com/permissions](https://myaccount.google.com/permissions)
+- **Policy:** [policies.google.com/privacy](https://policies.google.com/privacy)
 
 ### RevenueCat
 - **Purpose:** Subscription and in-app purchase management for EventNote Pro.
@@ -110,9 +127,13 @@ The App integrates with the following third-party services. Each service has its
 
 ## 5. Data Storage and Security
 
-**Local storage:** The majority of your data is stored on your device in an encrypted SQLite database managed by Apple's CoreData framework. This data never leaves your device unless you opt in to iCloud sync or use the Teams feature.
+**Local storage:** The majority of your data is stored on your device in an encrypted SQLite database managed by Apple's CoreData framework. This data never leaves your device unless you opt in to iCloud sync.
 
 **iCloud:** When iCloud sync is enabled, your data is stored in your personal iCloud account and governed by Apple's security practices. We do not have access to your iCloud data.
+
+**Backups:** The App creates local snapshot backups in your device's Documents directory. A maximum of 12 snapshots are kept; older backups are automatically deleted.
+
+**Analytics and diagnostics:** Anonymous usage and crash data is transmitted over HTTPS/TLS to the analytics providers listed in Section 4. This data is not linked to your name, email, or any account, and never contains the content of your events, clients, notes, prices, photos, or files.
 
 ---
 
@@ -123,8 +144,9 @@ The App may request the following device permissions:
 | Permission | Purpose | Required |
 |-----------|---------|---------|
 | **Location (When In Use)** | Calculate sun position and path in Sun Track | Optional |
-| **Camera** | Capture photos for events and team collaboration | Optional |
-| **Photo Library** | Import photos for events and team collaboration | Optional |
+| **Camera** | Capture photos for events | Optional |
+| **Photo Library** | Import photos for events | Optional |
+| **Calendar** | Read events from your device calendar so you can import them. The App never modifies your calendar | Optional |
 | **Notifications** | Deliver event and deadline reminders | Optional |
 | **iCloud** | Sync data across your Apple devices (Pro) | Optional |
 
@@ -144,9 +166,9 @@ Depending on your location, you may have rights regarding your personal data, in
 
 - **Access** — request a copy of the data we hold about you.
 - **Correction** — update inaccurate data directly within the App or by contacting us.
-- **Deletion** — delete your account and associated data. To delete your Teams account and all server-side data, sign in, navigate to Settings, and use the "Delete Account" option, or contact us directly.
+- **Deletion** — delete any data you have created directly within the App, or remove all of it by deleting the App from your device. If iCloud sync is enabled, data can also be removed from your iCloud account in iOS Settings.
 - **Portability** — the App's backup feature allows you to export your local data as SQLite snapshots.
-- **Withdrawal of consent** — revoke location, camera, photo library, or notification permissions at any time via iOS Settings.
+- **Withdrawal of consent** — revoke location, camera, photo library, calendar, or notification permissions at any time via iOS Settings, and revoke Google Calendar access at [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
 - **Objection to analytics** — contact us at the address in Section 11 to request that your usage data be excluded from analytics.
 
 **California residents (CCPA):** We do not sell personal information.  
@@ -158,8 +180,8 @@ Depending on your location, you may have rights regarding your personal data, in
 
 - **Local data** is retained on your device until you delete it or uninstall the App.
 - **iCloud data** is retained in your iCloud account under Apple's retention policies.
-- **Backup snapshots** are automatically managed; the App retains a maximum of 12 snapshots.
 - **Analytics and crash data** is retained by our analytics providers under their own retention schedules (typically 12 months or less for usage events, and 90 days for crash reports).
+- **Backup snapshots** are automatically managed; the App retains a maximum of 12 snapshots.
 
 ---
 
