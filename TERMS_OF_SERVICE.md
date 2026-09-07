@@ -1,7 +1,7 @@
 # Terms of Service
 
 **Effective Date:** April 15, 2026  
-**Last Updated:** April 15, 2026
+**Last Updated:** September 7, 2026
 
 Please read these Terms of Service ("Terms") carefully before using the EventNote mobile application ("App") developed by Volodymyr Pysarenko ("Developer", "we", "us", or "our"). By downloading, installing, or using the App, you agree to be bound by these Terms.
 
@@ -19,31 +19,20 @@ EventNote is a photography and event management application that allows you to:
 
 - Create, manage, and organize photography and production events
 - Track clients, contacts, deadlines, tasks, and pricing
-- Collaborate with team members on shared events
+- Import events from your Apple Calendar or Google Calendar
 - View sun position data for location planning
 - Synchronize data across Apple devices via iCloud (Pro feature)
 - Manage bookings and schedules
 
-Some features require an optional account (Teams) or an active EventNote Pro subscription.
+Some features require an active EventNote Pro subscription.
 
 ---
 
-## 3. User Accounts
+## 3. No Account Required
 
-### 3.1 Teams Account
+EventNote does not require you to register or create an account. The App works entirely on your device, and we do not operate servers that store your content.
 
-Certain collaboration features require you to register with an email address and password. You are responsible for:
-
-- Providing accurate and complete registration information
-- Maintaining the confidentiality of your password
-- All activities that occur under your account
-- Notifying us immediately of any unauthorized use of your account
-
-We reserve the right to suspend or terminate accounts that violate these Terms.
-
-### 3.2 No Account Required
-
-Core event management and scheduling features are available without an account and work entirely offline on your device.
+Your data is stored locally on your device and, if you enable iCloud sync (a Pro feature), in your personal iCloud account, to which we have no access.
 
 ---
 
@@ -91,9 +80,9 @@ You agree not to use the App to:
 
 You retain ownership of all content you create within the App, including event data, client information, photos, and files ("Your Content").
 
-### 6.2 License to Us
+### 6.2 No License to Us
 
-By uploading content to Supabase-backed features (Teams), you grant us a limited, non-exclusive, royalty-free license to store, display, and transmit Your Content solely as necessary to provide the Teams collaboration feature. We do not claim ownership of Your Content.
+The App does not upload Your Content to us. It is stored on your device and, if you enable iCloud sync, in your personal iCloud account. We therefore neither require nor claim any license to Your Content, and we do not claim ownership of it.
 
 ### 6.3 Responsibility for Content
 
@@ -105,13 +94,14 @@ We reserve the right to remove content that violates these Terms or applicable l
 
 ---
 
-## 7. Team Collaboration
+## 7. Calendar Import
 
-When you invite other users to team events or collaborate via the Teams feature:
+The App can import events from your Apple Calendar or Google Calendar so that you can continue managing them in EventNote:
 
-- You are responsible for the accuracy of invitation details you provide.
-- You must obtain any necessary consent from team members before sharing their information within the App.
-- You are responsible for managing member access and permissions within your team.
+- Import is optional, read-only, and initiated by you. The App never creates, modifies, or deletes events in your calendars.
+- Only the events you select are copied into the App, and they are stored on your device.
+- You are responsible for ensuring you have the right to import and store any third-party information contained in those events, such as other people's names or contact details.
+- Google Calendar import requires signing in with Google and is subject to Google's terms. You can revoke the App's access at any time in your Google Account settings.
 
 ---
 
@@ -125,7 +115,7 @@ You may not reproduce, distribute, modify, or create derivative works from the A
 
 ## 9. Third-Party Services
 
-The App integrates with third-party services (Supabase, RevenueCat, Apple iCloud, Google Places). Your use of these services is subject to their respective terms and privacy policies. We are not responsible for the practices of any third-party services.
+The App integrates with third-party services (RevenueCat, Apple iCloud, Google Places, Google Sign-In and the Google Calendar API, PostHog, and Firebase Analytics and Crashlytics). Your use of these services is subject to their respective terms and privacy policies. We are not responsible for the practices of any third-party services. See our [Privacy Policy](PRIVACY_POLICY.md) for what each service receives.
 
 ---
 
@@ -178,11 +168,11 @@ We strongly recommend enabling iCloud sync (Pro) and regularly creating local ba
 
 ### 15.1 By You
 
-You may stop using the App at any time. To delete your Teams account and associated server-side data, use the account deletion option in Settings, or contact us.
+You may stop using the App at any time. Because the App does not use accounts, deleting it from your device removes your locally stored data. If you enabled iCloud sync, you can also remove that data from your iCloud account in iOS Settings.
 
 ### 15.2 By Us
 
-We may suspend or terminate your access to the App or Teams account at any time, with or without notice, if we reasonably believe you have violated these Terms.
+We may suspend or terminate your access to the App at any time, with or without notice, if we reasonably believe you have violated these Terms.
 
 ### 15.3 Effect of Termination
 
